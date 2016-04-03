@@ -1,0 +1,78 @@
+# bpierre (colemak variant) keymap for Linux console.
+
+alt_is_meta
+charset "iso-8859-15"  # use a ISO-8859-15 font, e.g.: consolechars -f lat9v-14
+keymaps 0-12
+include "qwerty-layout"
+include "linux-with-alt-and-altgr"
+strings as usual
+
+keycode  41 =          grave    asciitilde       dead_grave        dead_tilde    nul
+keycode   2 =         exclam           one              nul               nul    nul
+keycode   3 =             at           two              nul               nul    nul
+keycode   4 =     numbersign         three              nul               nul    nul
+keycode   5 =         dollar          four              nul               nul    nul
+keycode   6 =        percent          five              nul               nul    nul
+keycode   7 =    asciicircum           six  dead_circumflex               nul 	 nul
+keycode   8 =      ampersand         seven              nul               nul    nul
+keycode   9 =       asterisk         eight              nul               nul    nul
+keycode  10 =      parenleft          nine              nul               nul    nul
+keycode  11 =     parenright          zero              nul               nul    nul
+keycode  12 =     underscore         minus              nul               nul 	 nul
+keycode  13 =           plus         equal              nul               nul    nul
+                                                                                        
+keycode  16 =              q             Q         asterisk               nul    Control_a
+keycode  17 =              w             W            seven               nul    Control_w 
+keycode  18 =              f             F            eight               nul    Control_f
+keycode  19 =              p             P             nine               nul    Control_p
+keycode  20 =              b             B            slash               nul    Control_b
+keycode  21 =              j             J              nul               nul    Control_j
+keycode  22 =              l             L             Home              Home    Control_l
+keycode  23 =              u             U               Up                Up    Control_u
+keycode  24 =              y             Y              End               End    Control_y
+keycode  25 =          colon     semicolon           PageUp   Scroll_Backward
+keycode  26 =    bracketleft     braceleft              nul               nul    Escape
+keycode  27 =   bracketright    braceright              nul               nul    Control_bracketright
+keycode  43 =      backslash           bar              nul               nul    Control_backslash
+
+keycode  30 =              a             A           period               nul    Control_a
+keycode  31 =              r             R             four               nul    Control_r
+keycode  32 =              s             S             five               nul    Control_s
+keycode  33 =              t             T              six               nul    Control_t
+keycode  34 =              g             G             plus               nul    Control_g
+keycode  35 =              m             M              nul               nul    Control_m
+keycode  36 =              n             N             Left              Left    Control_n
+keycode  37 =              e             E             Down              Down    Control_e
+keycode  38 =              i             I            Right             Right    Control_i
+keycode  39 =              o             O         PageDown    Scroll_Forward    Control_o
+keycode  40 =     apostrophe      quotedbl       dead_acute    dead_diaeresis    nul
+
+keycode  44 =              z             Z             zero               nul    Control_z
+keycode  45 =              x             X              one               nul    Control_x
+keycode  46 =              c             C              two               nul    Control_c
+keycode  47 =              d             D            three               nul    Control_d
+keycode  48 =              v             V            minus               nul    Control_v
+keycode  49 =              k             K              nul               nul    Control_k
+keycode  50 =              h             H              nul               nul    Control_h
+keycode  51 =          comma          less     dead_cedilla               nul    nul
+keycode  52 =         period       greater              nul               nul    nul
+keycode  53 =          slash      question              nul               nul    nul
+                                                                             
+keycode  58 =      BackSpace        Delete        BackSpace            Delete    nul
+keycode  86 =          minus    underscore              nul               nul 	 Control_underscore
+keycode  57 =          space         space            space             space    nul
+
+keycode   1 = Escape
+keycode  14 = Caps_Lock
+keycode  15 = Tab Tab equal equal
+keycode  28 = Return
+        alt     keycode  28 = Meta_Control_m
+
+# Sticky modifiers + swapped right control/alt keys.
+keymaps 0-15
+keycode 29 = SCtrl
+keycode 42 = SShift
+keycode 54 = SShift
+keycode 56 = SAltGr
+keycode 97 = SAlt
+keycode 100 = SCtrl
