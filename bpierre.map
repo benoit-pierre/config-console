@@ -19,7 +19,7 @@ keycode   9 =       asterisk         eight              nul               nul   
 keycode  10 =      parenleft          nine              nul               nul    nul
 keycode  11 =     parenright          zero              nul               nul    nul
 keycode  12 =     underscore         minus              nul               nul 	 nul
-keycode  13 =           plus         equal              nul               nul    nul
+keycode  13 =          equal          plus              nul               nul    nul
                                                                                         
 keycode  16 =              q             Q         asterisk               nul    Control_a
 keycode  17 =              w             W            seven               nul    Control_w 
