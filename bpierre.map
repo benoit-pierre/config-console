@@ -8,18 +8,18 @@ include "linux-with-alt-and-altgr"
 strings as usual
 
 keycode  41 =          grave    asciitilde       dead_grave        dead_tilde    nul
-keycode   2 =         exclam           one              nul               nul    nul
-keycode   3 =             at           two              nul               nul    nul
-keycode   4 =     numbersign         three              nul               nul    nul
-keycode   5 =         dollar          four              nul               nul    nul
-keycode   6 =        percent          five              nul               nul    nul
-keycode   7 =    asciicircum           six  dead_circumflex               nul 	 nul
-keycode   8 =      ampersand         seven              nul               nul    nul
-keycode   9 =       asterisk         eight              nul               nul    nul
-keycode  10 =      parenleft          nine              nul               nul    nul
-keycode  11 =     parenright          zero              nul               nul    nul
-keycode  12 =     underscore         minus              nul               nul 	 nul
-keycode  13 =          equal          plus              nul               nul    nul
+keycode   2 =         exclam           one               F1               nul    nul
+keycode   3 =             at           two               F2               nul    nul
+keycode   4 =     numbersign         three               F3               nul    nul
+keycode   5 =         dollar          four               F4               nul    nul
+keycode   6 =        percent          five               F5               nul    nul
+keycode   7 =    asciicircum           six               F6               nul    nul
+keycode   8 =      ampersand         seven               F7               nul    nul
+keycode   9 =       asterisk         eight               F8               nul    nul
+keycode  10 =      parenleft          nine               F9               nul    nul
+keycode  11 =     parenright          zero              F10               nul    nul
+keycode  12 =     underscore         minus              F11               nul    nul
+keycode  13 =          equal          plus              F12               nul    nul
                                                                                         
 keycode  16 =              q             Q         asterisk               nul    Control_a
 keycode  17 =              w             W            seven               nul    Control_w 
@@ -53,13 +53,13 @@ keycode  46 =              c             C              two               nul   
 keycode  47 =              d             D            three               nul    Control_d
 keycode  48 =              v             V            minus               nul    Control_v
 keycode  49 =              k             K              nul               nul    Control_k
-keycode  50 =              h             H              nul               nul    Control_h
+keycode  50 =              h             H  dead_circumflex               nul    Control_h
 keycode  51 =          comma          less     dead_cedilla               nul    nul
 keycode  52 =         period       greater              nul               nul    nul
-keycode  53 =          slash      question              nul               nul    nul
+keycode  53 =          slash      question        backslash               bar    nul
                                                                              
 keycode  58 =      BackSpace        Delete        BackSpace            Delete    nul
-keycode  86 =          minus    underscore              nul               nul 	 Control_underscore
+keycode  86 =          minus    underscore              nul               nul    Control_underscore
 keycode  57 =          space         space            space             space    nul
 
 keycode   1 = Escape
@@ -76,3 +76,17 @@ keycode 54 = SShift
 keycode 56 = SAltGr
 keycode 97 = SAlt
 keycode 100 = SCtrl
+
+# Console switch on Alt+Ctrl+number
+control alt keycode  2 = Console_1
+control alt keycode  3 = Console_2
+control alt keycode  4 = Console_3
+control alt keycode  5 = Console_4
+control alt keycode  6 = Console_5
+control alt keycode  7 = Console_6
+control alt keycode  8 = Console_7
+control alt keycode  9 = Console_8
+control alt keycode 10 = Console_9
+control alt keycode 11 = Console_10
+control alt keycode 12 = Console_11
+control alt keycode 13 = Console_12
